@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #228B22; /* Tree green */
+      min-height: 100vh;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+    }
+
+    h1, h2, h3 {
+      margin: 5px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .image-placeholder {
+      background-color: #e0f7e9;
+      border: 2px dashed #04AA6D;
+      height: 400px;
+      width: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Makes image fill container while preserving aspect ratio */
+      border-radius: 10px;
+    }
+
+    .text-area {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .text-area textarea {
+      width: 100%;
+      height: 400px;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      resize: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-placeholder, .text-area textarea {
+        width: 90%;
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center">
+    <h2>SRI NARAYANA MATRIC.HR.SEC.SCHOOL</h2>
+    <h3>Poolovapatti</h3>
+    <h3>Coimbatore-641101</h3>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Left: Image -->
+    <div class="image-placeholder">
+      <img src="sarakondrai.jpeg" alt="Sarakondrai Flower">
+    </div>
+
+    <div class="text-area">
+  <textarea readonly placeholder="Write your explanation about the image here...">
+Tamil Name: மஞ்சள் சரக்கொன்றை
+
+Botanical Name: Cassia fistula
+
+Biological Classification: Family: Fabaceae
+
+Medicinal uses :
+
+Helps in relieving constipation
+
+Accelerates the healing process of cuts and injuries
+
+Reduces inflammation and infection
+
+Helps in regulating blood sugar levels
+
+Improves insulin sensitivity
+
+Growing Areas: Tropical climates, especially South India
+  </textarea>
+</div>
+  </div>
+
+</body>
+</html>
